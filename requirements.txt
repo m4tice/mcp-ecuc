@@ -1,0 +1,10 @@
+# MCP ECUC Server - Python Implementation Requirements
+
+# FastMCP - Python framework for Model Context Protocol
+fastmcp>=0.1.0
+
+# Alternative: Standard MCP SDK (comment out fastmcp if using this)
+# mcp>=1.0.0
+
+# Additional dependencies that might be useful
+asyncio-subprocess>=0.1.0

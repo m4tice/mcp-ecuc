@@ -209,5 +209,6 @@ async def read_arxml_file(path: str) -> str:
         return f"Error reading file: {str(e)}"
 
 if __name__ == "__main__":
-    # Run the FastMCP server
-    mcp.run()
+    print("Starting FastMCP ECUC Server in HTTP mode on http://localhost:8000")
+    # Run in HTTP mode only (not SSE, not stdio)
+    mcp.run(transport="http", host="localhost", port=8000)

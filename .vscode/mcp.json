@@ -9,6 +9,10 @@
       "env": {
         "ECUC_PROJECT_PATH": "/Users/m4tice/workspace/Ja."
       }
+    },
+    "mcp-ecuc-fastmcp": {
+      "type": "http",
+      "url": "http://127.0.0.1:8000/mcp"
     }
   }
 }

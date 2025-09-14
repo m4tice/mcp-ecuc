@@ -1,0 +1,14 @@
+{
+  "servers": {
+    "mcp-ecuc-server": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "/Users/m4tice/workspace/Java/mcpecuc/build/index.js"
+      ],
+      "env": {
+        "ECUC_PROJECT_PATH": "/Users/m4tice/workspace/Java/mcp-ecuc"
+      }
+    }
+  }
+}

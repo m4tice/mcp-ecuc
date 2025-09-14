@@ -1,0 +1,27 @@
+{
+  "name": "mcp-ecuc-server",
+  "version": "1.0.0",
+  "description": "MCP server that exposes ECUC (ECU Configuration) data extraction functionality",
+  "type": "module",
+  "main": "build/index.js",
+  "bin": {
+    "mcp-ecuc-server": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod 755 build/index.js",
+    "start": "node build/index.js",
+    "dev": "tsc && node build/index.js"
+  },
+  "keywords": ["mcp", "ecuc", "automotive", "server"],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "files": ["build"]
+}

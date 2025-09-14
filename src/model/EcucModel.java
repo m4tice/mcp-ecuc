@@ -6,6 +6,7 @@ import can.CanIfPduCfg;
 import com.Com;
 import com.ComIPdu;
 import ecuc.EcucPdu;
+import ecuc.EcucPduCollection;
 import pdur.PduR;
 import pdur.PduRDestPdu;
 import pdur.PduRRoutingPath;
@@ -17,10 +18,12 @@ public class EcucModel {
     private final Com com;
     private final CanIf canIf;
     private final PduR pduR;
+    private final ecuc.EcucPduCollection ecucPduCollection;
 
     // Constructor
     public EcucModel() {
         this.com = new Com();
+        this.ecucPduCollection = new EcucPduCollection();
         this.canIf = new CanIf();
         this.pduR = new PduR();
     }
@@ -54,7 +57,10 @@ public class EcucModel {
 
         // EcucPdus
         EcucPdu ESP_19 = new EcucPdu("ESP_19", 1, 8);
+        this.ecucPduCollection.addEcucPdu(ESP_19);
+        
         EcucPdu TSK_07 = new EcucPdu("TSK_07", 2, 8);
+        this.ecucPduCollection.addEcucPdu(TSK_07);
 
         // Com
         // ComIPdus

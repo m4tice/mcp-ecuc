@@ -4,15 +4,15 @@
       "type": "stdio",
       "command": "node",
       "args": [
-        "/Users/m4tice/workspace/Java/mcpecuc/build/index.js"
+        "/Users/m4tice/workspace/Java/mcp-ecuc/build/index.js"
       ],
       "env": {
-        "ECUC_PROJECT_PATH": "/Users/m4tice/workspace/Ja."
+        "ECUC_PROJECT_PATH": "/Users/m4tice/workspace/Java/mcp-ecuc"
       }
-    },
-    "mcp-ecuc-fastmcp": {
-      "type": "http",
-      "url": "http://127.0.0.1:8000/mcp"
     }
+    // "mcp-ecuc-fastmcp": {
+    //   "type": "http",
+    //   "url": "http://127.0.0.1:8000/mcp"
+    // }
   }
 }
